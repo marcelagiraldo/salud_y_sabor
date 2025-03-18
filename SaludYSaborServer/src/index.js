@@ -1,5 +1,4 @@
 const express = require("express")
-const mongooseConnectionDB = require("./config/database")
 require('dotenv').config()
 
 const app = express()
@@ -9,4 +8,3 @@ app.listen(port,()=>{
     console.log(`Port running ${port}`);    
 })
 
-mongooseConnectionDB()
